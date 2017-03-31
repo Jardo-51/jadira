@@ -74,7 +74,7 @@
 	
 	<scm>
 		<developerConnection>scm:git:file://${project.basedir}</developerConnection>
-		<tag>jadira.parent-4.0.0.GA-GBS-1</tag>
+		<tag>jadira.depmgmt-4.0.0.GA-GBS-1</tag>
 	</scm>
 
 	<dependencyManagement>
@@ -471,32 +471,13 @@
 	</dependencyManagement>
 	
   	<distributionManagement>
-  		<!-- See http://maven.apache.org/plugins/maven-site-plugin/examples/site-deploy-to-sourceforge.net.html -->
-  	  	<site>
-  	  	  	<id>jadira.sourceforge.net</id>
-  	  	  	<url>scp://shell.sourceforge.net/home/project-web/jadira/htdocs/depmgmt</url>
-  	  	  	<name>Usertype Maven Site</name>
-  	  	</site>
-  	  	<!-- Old Sourceforge Repository
 		<repository>
-			<id>jadira.sourceforge.net.m2-repo</id>
-			<url>scp://shell.sourceforge.net/home/project-web/jadira/htdocs/m2-repo</url>
-			<name>Jadira Maven 2 Repository</name>
-  		</repository> 
-  		<snapshotRepository>
-  			<id>jadira.sourceforge.net.m2-repo-snapshots</id>
-  			<url>scp://shell.sourceforge.net/home/project-web/jadira/htdocs/m2-repo-snapshots</url>
-  			<name>Jadira Maven 2 Snapshots Repository</name>
-  		</snapshotRepository> -->
-		<repository>
-			<id>sonatype-nexus-staging</id>
-			<url>http://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-			<name>Nexus Release Repository</name>
+			<id>central-deploy</id>
+			<url>http://maven.globesy.sk/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
-			<id>sonatype-nexus-snapshots</id>
-			<url>http://oss.sonatype.org/content/repositories/snapshots</url>
-			<name>Sonatype Nexus Snapshots</name>
+			<id>snapshots-deploy</id>
+			<url>http://maven.globesy.sk/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
   	</distributionManagement>
 
