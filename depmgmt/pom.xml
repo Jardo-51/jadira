@@ -73,10 +73,8 @@
 	</licenses>
 	
 	<scm>
-	    <connection>scm:git:git@github.com:JadiraOrg/jadira.git</connection>
-	    <url>scm:git:git@github.com:JadiraOrg/jadira.git</url>
-	    <developerConnection>scm:git:git@github.com:JadiraOrg/jadira.git</developerConnection>
-  	  <tag>jadira.parent-4.0.0.GA</tag>
+		<developerConnection>scm:git:file://${project.basedir}</developerConnection>
+		<tag>jadira.parent-4.0.0.GA-GBS-1</tag>
 	</scm>
 
 	<dependencyManagement>
