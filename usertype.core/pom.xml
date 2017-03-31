@@ -21,7 +21,7 @@
 	<parent>
 		<groupId>org.jadira.framework</groupId>
 		<artifactId>jadira.parent</artifactId>
-		<version>4.0.0.GA-GBS-1-SNAPSHOT</version>
+		<version>4.0.0.GA</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	
@@ -29,6 +29,7 @@
 
 	<groupId>org.jadira.usertype</groupId>
 	<artifactId>usertype.core</artifactId>
+	<version>4.0.0.GA-GBS-1</version>
 	<packaging>jar</packaging>
 
 	<name>Jadira Usertype Core (for Joda Time, Joda Money, Libphonenum and JDK Types with Hibernate)</name>
@@ -41,7 +42,7 @@
 				<artifactId>jadira.depmgmt</artifactId>
 				<type>pom</type>
 				<scope>import</scope>
-				<version>${project.version}</version>
+				<version>${project.parent.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -105,12 +106,12 @@
 		<dependency>
 			<groupId>org.jadira.usertype</groupId>
 			<artifactId>usertype.spi</artifactId>
-			<version>${project.version}</version>
+			<version>${project.parent.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jadira.usertype</groupId>
 			<artifactId>usertype.spi</artifactId>
-			<version>${project.version}</version>
+			<version>${project.parent.version}</version>
 			<type>test-jar</type>
 			<scope>test</scope>
 		</dependency>
@@ -118,7 +119,7 @@
 		<dependency>
 			<groupId>org.jadira.cdt</groupId>
 			<artifactId>cdt</artifactId>
-			<version>${project.version}</version>
+			<version>${project.parent.version}</version>
 			<optional>true</optional>
 		</dependency>
 		
